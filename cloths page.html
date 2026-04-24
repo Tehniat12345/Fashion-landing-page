@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet & Vogue | Summer Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100vh; overflow: hidden; font-family: 'Montserrat', sans-serif; background: #fff; }
+
+        .fashion-container {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1.2fr; /* 3 Columns layout */
+            height: 100vh;
+            align-items: center;
+            background: #fdfdfd;
+        }
+
+        /* Side Images */
+        .side-img {
+            height: 85vh;
+            width: 90%;
+            object-fit: cover;
+            filter: grayscale(30%);
+            transition: 0.5s;
+            box-shadow: 20px 20px 0px #eee;
+        }
+        
+        .side-img:hover { filter: grayscale(0%); transform: scale(1.02); }
+
+        .left-box { display: flex; justify-content: flex-end; padding-right: 20px; }
+        .right-box { display: flex; justify-content: flex-start; padding-left: 20px; }
+
+        /* Center Content */
+        .center-content {
+            text-align: center;
+            padding: 0 20px;
+            z-index: 10;
+        }
+
+        .center-content span {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 0.8rem;
+            color: #888;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 4rem;
+            color: #111;
+            font-style: italic;
+            margin-bottom: 25px;
+            line-height: 1;
+        }
+
+        .cta-fashion {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #111;
+            color: #111;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .cta-fashion:hover {
+            background: #111;
+            color: #fff;
+        }
+
+        /* Decorative Line */
+        .line {
+            width: 1px;
+            height: 100px;
+            background: #111;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="fashion-container">
+        <div class="left-box">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920" class="side-img" alt="Fashion 1">
+        </div>
+
+        <div class="center-content">
+            <span>New Arrival 2026</span>
+            <h1>Velvet <br>& Vogue</h1>
+            <div class="line"></div>
+            <p style="font-size: 0.9rem; color: #555; margin-bottom: 30px;">Redefining elegance through minimalist <br>and sustainable couture.</p>
+            <a href="#" class="cta-fashion">View Collection</a>
+        </div>
+
+        <div class="right-box">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1920" class="side-img" alt="Fashion 2">
+        </div>
+    </div>
+
+</body>
+</html>
